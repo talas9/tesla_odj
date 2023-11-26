@@ -2973,6 +2973,107 @@
                 "security_level": 0
             }
         },
+        "GET_ECULOG_DESCRIPTOR": {
+            "hex_id": "0xe00",
+            "node_name": "RCM",
+            "read": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "PRIORITY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NONE": 0,
+                                "PRIORITY_1": 1,
+                                "PRIORITY_2": 2,
+                                "PRIORITY_3": 3
+                            }
+                        }
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            }
+                        }
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 7,
+                "output": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "PRIORITY": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NONE": 0,
+                                "PRIORITY_1": 1,
+                                "PRIORITY_2": 2,
+                                "PRIORITY_3": 3
+                            }
+                        }
+                    },
+                    "PROTOCOL_ID": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "INVALID": 0,
+                                "RQUL": 1
+                            }
+                        }
+                    },
+                    "SIZE": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "output_size": 7,
+                "security_level": 0
+            }
+        },
         "IMPACT_SENSOR_ACCEL_LEFT_VERIFICATION_PCSL": {
             "hex_id": "0xfe12",
             "node_name": "RCM",
@@ -6314,6 +6415,38 @@
                 "security_level": 0
             }
         },
+        "SET_ECULOG_TRANSFER_STATUS": {
+            "hex_id": "0xe0f",
+            "node_name": "RCM",
+            "write": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    },
+                    "TRANSFER_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TRANSFER_ABORTED": 2,
+                                "TRANSFER_COMPLETED": 0,
+                                "TRANSFER_SUSPENDED": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
         "SUPPLY_VOLTAGE_STATUS": {
             "hex_id": "0xfd13",
             "node_name": "RCM",
@@ -6488,6 +6621,23 @@
                     }
                 },
                 "output_size": 6,
+                "security_level": 0
+            }
+        },
+        "TRIGGER_ECULOG_UPLOAD_REQUEST": {
+            "hex_id": "0xe0d",
+            "node_name": "RCM",
+            "write": {
+                "input": {
+                    "LOG_IDENTIFIER": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 4,
                 "security_level": 0
             }
         },

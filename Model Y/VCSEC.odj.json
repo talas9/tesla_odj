@@ -237,6 +237,103 @@
                 "security_level": 0
             }
         },
+        "NFC_ANTENNA_DRIVE_TYPE": {
+            "hex_id": "0x853",
+            "node_name": "VCSEC",
+            "read": {
+                "input": {
+                    "CENTER_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            }
+                        }
+                    },
+                    "LEFT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            }
+                        }
+                    },
+                    "RIGHT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            }
+                        }
+                    }
+                },
+                "input_size": 3,
+                "output": {
+                    "CENTER_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            }
+                        }
+                    },
+                    "LEFT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            }
+                        }
+                    },
+                    "RIGHT_B_PILLAR_ANTENNA_TYPE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TYPE_DIFFERENTIAL_ANTENNA": 0,
+                                "TYPE_SINGLE_ANTENNA": 1
+                            }
+                        }
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            }
+        },
         "NFC_ANTENNA_SELECTION": {
             "hex_id": "0x905",
             "node_name": "VCSEC",

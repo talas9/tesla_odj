@@ -38,6 +38,20 @@
                             }
                         }
                     },
+                    "DOOR_ID_FAILED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            }
+                        }
+                    },
                     "INLET_VANITY_LED_FAILED": {
                         "bit_length": 1,
                         "bit_position": 5,

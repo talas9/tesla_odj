@@ -17317,17 +17317,20 @@
                         "map": {
                             "calculator": "enum",
                             "enum": {
-                                "BMS_ALERTS": 12,
+                                "BMS_ALERTS": 15,
                                 "FAILED_TO_HEAT_PACK": 4,
                                 "INIT": 0,
-                                "NO_AC_CHARGER_CONNECTED": 11,
+                                "NO_AC_CHARGER_CONNECTED": 14,
                                 "REQUEST_DROPPED": 2,
                                 "RUNNING": 1,
-                                "TEST_COMPLETE": 9,
-                                "TEST_COMPLETE_WITH_SOC_IMBALANCE": 10,
-                                "TIMEOUT_IN_CHARGE": 7,
-                                "TIMEOUT_IN_CHARGE_REST": 8,
+                                "TEST_COMPLETE": 12,
+                                "TEST_COMPLETE_WITH_SOC_IMBALANCE": 13,
+                                "TIMEOUT_IN_CAC_CAPTURE": 11,
+                                "TIMEOUT_IN_CHARGE": 8,
+                                "TIMEOUT_IN_CHARGED_SOC_CAPTURE": 10,
+                                "TIMEOUT_IN_CHARGE_REST": 9,
                                 "TIMEOUT_IN_DISCHARGE": 5,
+                                "TIMEOUT_IN_DISCHARGED_SOC_CAPTURE": 7,
                                 "TIMEOUT_IN_DISCHARGE_REST": 6,
                                 "TIMEOUT_IN_SAMPLE_STATE": 3
                             }
@@ -17342,15 +17345,12 @@
                         "map": {
                             "calculator": "enum",
                             "enum": {
-                                "ABORTED": 8,
-                                "CHARGE": 5,
-                                "COMPLETE": 7,
-                                "DISCHARGE": 4,
-                                "HEAT_PACK": 3,
-                                "NOT_READY": 0,
-                                "READY": 1,
-                                "RESTING": 6,
-                                "SAMPLE_CHARGE_POWER": 2
+                                "CHARGE": 4,
+                                "CHARGE_REST": 5,
+                                "DISCHARGE": 2,
+                                "DISCHARGE_REST": 3,
+                                "HEAT_PACK": 1,
+                                "NOT_RUNNING": 0
                             }
                         }
                     },
