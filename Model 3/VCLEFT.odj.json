@@ -772,6 +772,88 @@
                 "security_level": 5
             }
         },
+        "MOVE_STEERING_COLUMN": {
+            "hex_id": "0x429",
+            "node_name": "VCLEFT",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {
+                    "STEERING_COLUMN_REQUEST": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "DOWN": 2,
+                                "IN": 3,
+                                "NONE": 0,
+                                "OUT": 4,
+                                "UP": 1
+                            }
+                        }
+                    },
+                    "TARGET_MM": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null
+                    }
+                },
+                "input_size": 5,
+                "output": {
+                    "ROUTINE_START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "ROUTINE_STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
         "REQUEST_LIVE_AX_PITCH_ESTIMATION_STATE": {
             "hex_id": "0x603",
             "node_name": "VCLEFT",

@@ -1,5 +1,48 @@
 {
     "data": {
+        "ESP_ECU_MOTOR_CURRENT": {
+            "hex_id": "0xf70",
+            "node_name": "VCFRONT",
+            "read": {
+                "input": {
+                    "CURRENT": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.01,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CURRENT": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.01,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0
+                        }
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
         "GET_ECULOG_DESCRIPTOR": {
             "hex_id": "0xe00",
             "node_name": "VCFRONT",
@@ -851,6 +894,39 @@
                 "security_level": 0
             }
         },
+        "CHARGE_SOC_MONITOR": {
+            "hex_id": "0x613",
+            "node_name": "VCFRONT",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "SET_SOC_THRESHOLD": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
         "CHECK_CONNECTED_ENDPOINTS": {
             "hex_id": "0x430",
             "node_name": "VCFRONT",
@@ -1633,165 +1709,6 @@
                     }
                 },
                 "output_size": 2,
-                "security_level": 5
-            },
-            "start": {
-                "input": {},
-                "input_size": 0,
-                "output": {
-                    "START_RESULT": {
-                        "bit_length": 8,
-                        "bit_position": 0,
-                        "byte_position": 0,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FAILED_ALREADY_RUNNING": 1,
-                                "FAILED_INCORRECT_CONDITIONS": 3,
-                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
-                                "SUCCESSFUL": 0
-                            }
-                        }
-                    }
-                },
-                "output_size": 1,
-                "security_level": 5
-            },
-            "stop": {
-                "input": {},
-                "input_size": 0,
-                "output": {
-                    "STOP_RESULT": {
-                        "bit_length": 8,
-                        "bit_position": 0,
-                        "byte_position": 0,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FAILED_ROUTINE_NOT_RUNNING": 1,
-                                "SUCCESSFUL": 0
-                            }
-                        }
-                    }
-                },
-                "output_size": 1,
-                "security_level": 5
-            }
-        },
-        "RECONNECT_LV_BATTERY": {
-            "hex_id": "0x455",
-            "node_name": "VCFRONT",
-            "results": {
-                "input": {},
-                "input_size": 0,
-                "output": {
-                    "BATTERY_NOT_RECONNECTED": {
-                        "bit_length": 1,
-                        "bit_position": 0,
-                        "byte_position": 1,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FALSE": 0,
-                                "TRUE": 1
-                            }
-                        }
-                    },
-                    "DCDC_OFF": {
-                        "bit_length": 1,
-                        "bit_position": 0,
-                        "byte_position": 5,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FALSE": 0,
-                                "TRUE": 1
-                            }
-                        }
-                    },
-                    "HV_OFF": {
-                        "bit_length": 1,
-                        "bit_position": 0,
-                        "byte_position": 6,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FALSE": 0,
-                                "TRUE": 1
-                            }
-                        }
-                    },
-                    "LVBMS_MIA": {
-                        "bit_length": 1,
-                        "bit_position": 0,
-                        "byte_position": 3,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FALSE": 0,
-                                "TRUE": 1
-                            }
-                        }
-                    },
-                    "REVERSE_BATTERY_EFUSE_FAULT": {
-                        "bit_length": 1,
-                        "bit_position": 0,
-                        "byte_position": 4,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FALSE": 0,
-                                "TRUE": 1
-                            }
-                        }
-                    },
-                    "SOC_UNRECOVERABLE": {
-                        "bit_length": 1,
-                        "bit_position": 0,
-                        "byte_position": 2,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "FALSE": 0,
-                                "TRUE": 1
-                            }
-                        }
-                    },
-                    "STATUS": {
-                        "bit_length": 8,
-                        "bit_position": 0,
-                        "byte_position": 0,
-                        "data_type": "uint",
-                        "default": null,
-                        "map": {
-                            "calculator": "enum",
-                            "enum": {
-                                "NOT_RUNNING_FINISHED": 0,
-                                "NOT_RUNNING_INTERRUPTED": 2,
-                                "NOT_RUNNING_NEVER_STARTED": 3,
-                                "NOT_RUNNING_STOP_REQUESTED": 1,
-                                "RUNNING": 4
-                            }
-                        }
-                    }
-                },
-                "output_size": 9,
                 "security_level": 5
             },
             "start": {
@@ -6712,6 +6629,20 @@
                         "data_type": "uint",
                         "default": null
                     },
+                    "DRIVE_INVERTER_TEMP_INVALID": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            }
+                        }
+                    },
                     "EXV_FAULT": {
                         "bit_length": 1,
                         "bit_position": 0,
@@ -7065,7 +6996,7 @@
                         }
                     }
                 },
-                "output_size": 57,
+                "output_size": 58,
                 "security_level": 0
             },
             "start": {
