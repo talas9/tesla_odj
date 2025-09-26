@@ -10,21 +10,24 @@
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "COMPONENT_KEY": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "FIRMWARE_TYPE": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     }
                 },
                 "input_size": 3,
@@ -34,21 +37,24 @@
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "COMPONENT_KEY": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "FIRMWARE_TYPE": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     }
                 },
                 "output_size": 3,

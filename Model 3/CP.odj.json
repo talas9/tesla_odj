@@ -10,7 +10,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "PRIORITY": {
                         "bit_length": 8,
@@ -25,8 +26,10 @@
                                 "PRIORITY_1": 1,
                                 "PRIORITY_2": 2,
                                 "PRIORITY_3": 3
-                            }
-                        }
+                            },
+                            "enum_name": "PRIORITY"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROTOCOL_ID": {
                         "bit_length": 8,
@@ -39,15 +42,18 @@
                             "enum": {
                                 "INVALID": 0,
                                 "RQUL": 1
-                            }
-                        }
+                            },
+                            "enum_name": "PROTOCOL_ID"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SIZE": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 10,
@@ -57,7 +63,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "PRIORITY": {
                         "bit_length": 8,
@@ -72,8 +79,10 @@
                                 "PRIORITY_1": 1,
                                 "PRIORITY_2": 2,
                                 "PRIORITY_3": 3
-                            }
-                        }
+                            },
+                            "enum_name": "PRIORITY"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROTOCOL_ID": {
                         "bit_length": 8,
@@ -86,15 +95,18 @@
                             "enum": {
                                 "INVALID": 0,
                                 "RQUL": 1
-                            }
-                        }
+                            },
+                            "enum_name": "PROTOCOL_ID"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SIZE": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 10,
@@ -111,7 +123,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "TRANSFER_STATE": {
                         "bit_length": 8,
@@ -125,8 +138,10 @@
                                 "TRANSFER_ABORTED": 2,
                                 "TRANSFER_COMPLETED": 0,
                                 "TRANSFER_SUSPENDED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "TRANSFER_STATE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "input_size": 5,
@@ -155,8 +170,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_DRIVER_INITIALIZATION_FAILED": {
                         "bit_length": 1,
@@ -169,8 +186,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_ID_FAILED": {
                         "bit_length": 1,
@@ -183,8 +202,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "INLET_VANITY_LED_FAILED": {
                         "bit_length": 1,
@@ -197,8 +218,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "LEDS_FAILED": {
                         "bit_length": 1,
@@ -211,8 +234,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "OPEN_MOTOR_FAILED": {
                         "bit_length": 1,
@@ -225,8 +250,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "POTENTIOMETER_FAILED": {
                         "bit_length": 1,
@@ -239,8 +266,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PRESENCE_SENSOR_FAILED": {
                         "bit_length": 1,
@@ -253,8 +282,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "RESPONSE_RETURN_CODE": {
                         "bit_length": 8,
@@ -270,8 +301,10 @@
                                 "ROUTINE_FAILED_STOPPED": 1,
                                 "ROUTINE_NOT_STARTED": 3,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -294,8 +327,10 @@
                                 "FAILED_BAD_CONDITIONS": 3,
                                 "FAILED_CONFLICTING_TEST": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -316,8 +351,10 @@
                             "enum": {
                                 "FAILED_TEST_NOT_RUNNING": 1,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -342,8 +379,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_CINCH_POSITION_FAILED": {
                         "bit_length": 1,
@@ -356,8 +395,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_CINCH_PRESENCE_FAILED": {
                         "bit_length": 1,
@@ -370,8 +411,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_CLOSE_POSITION_FAILED": {
                         "bit_length": 1,
@@ -384,8 +427,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_CLOSE_PRESENCE_FAILED": {
                         "bit_length": 1,
@@ -398,8 +443,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_DRIVER_INITIALIZATION_FAILED": {
                         "bit_length": 1,
@@ -412,8 +459,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_OPEN_POSITION_FAILED": {
                         "bit_length": 1,
@@ -426,8 +475,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "DOOR_OPEN_PRESENCE_FAILED": {
                         "bit_length": 1,
@@ -440,8 +491,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "RESPONSE_RETURN_CODE": {
                         "bit_length": 8,
@@ -457,8 +510,10 @@
                                 "ROUTINE_FAILED_STOPPED": 1,
                                 "ROUTINE_NOT_STARTED": 3,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -481,8 +536,10 @@
                                 "FAILED_BAD_CONDITIONS": 3,
                                 "FAILED_CONFLICTING_TEST": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -503,8 +560,10 @@
                             "enum": {
                                 "FAILED_TEST_NOT_RUNNING": 1,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -529,8 +588,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROXIMITY_FAILED": {
                         "bit_length": 1,
@@ -543,8 +604,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "RESPONSE_RETURN_CODE": {
                         "bit_length": 8,
@@ -560,8 +623,10 @@
                                 "ROUTINE_FAILED_STOPPED": 1,
                                 "ROUTINE_NOT_STARTED": 3,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -584,8 +649,10 @@
                                 "FAILED_BAD_CONDITIONS": 3,
                                 "FAILED_CONFLICTING_TEST": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -606,8 +673,10 @@
                             "enum": {
                                 "FAILED_TEST_NOT_RUNNING": 1,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -632,8 +701,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "INLET_HARNESS_ID_FAILED": {
                         "bit_length": 1,
@@ -646,8 +717,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "INLET_HEATER_FAILED": {
                         "bit_length": 1,
@@ -660,8 +733,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "LATCH_FAILED": {
                         "bit_length": 1,
@@ -674,8 +749,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PIN_TEMP_SENSOR_1_FAILED": {
                         "bit_length": 1,
@@ -688,8 +765,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PIN_TEMP_SENSOR_2_FAILED": {
                         "bit_length": 1,
@@ -702,8 +781,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PIN_TEMP_SENSOR_3_FAILED": {
                         "bit_length": 1,
@@ -716,8 +797,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "RESPONSE_RETURN_CODE": {
                         "bit_length": 8,
@@ -733,8 +816,10 @@
                                 "ROUTINE_FAILED_STOPPED": 1,
                                 "ROUTINE_NOT_STARTED": 3,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -757,8 +842,10 @@
                                 "FAILED_BAD_CONDITIONS": 3,
                                 "FAILED_CONFLICTING_TEST": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -779,8 +866,10 @@
                             "enum": {
                                 "FAILED_TEST_NOT_RUNNING": 1,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -805,8 +894,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "RESPONSE_RETURN_CODE": {
                         "bit_length": 8,
@@ -822,8 +913,10 @@
                                 "ROUTINE_FAILED_STOPPED": 1,
                                 "ROUTINE_NOT_STARTED": 3,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -846,8 +939,10 @@
                                 "FAILED_BAD_CONDITIONS": 3,
                                 "FAILED_CONFLICTING_TEST": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -868,8 +963,10 @@
                             "enum": {
                                 "FAILED_TEST_NOT_RUNNING": 1,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -897,8 +994,10 @@
                                 "ROUTINE_FAILED_STOPPED": 1,
                                 "ROUTINE_NOT_STARTED": 3,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_CODE"
+                        },
+                        "physical_type": "utf8"
                     },
                     "UHF_FAILED": {
                         "bit_length": 1,
@@ -911,8 +1010,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -935,8 +1036,10 @@
                                 "FAILED_BAD_CONDITIONS": 3,
                                 "FAILED_CONFLICTING_TEST": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -957,8 +1060,10 @@
                             "enum": {
                                 "FAILED_TEST_NOT_RUNNING": 1,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_CODE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,

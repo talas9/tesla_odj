@@ -10,7 +10,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 1,
@@ -20,7 +21,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 1,
@@ -33,7 +35,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 1,
@@ -50,7 +53,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -60,7 +64,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 20,
@@ -73,7 +78,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -90,7 +96,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -100,7 +107,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 14,
@@ -113,7 +121,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -130,14 +139,16 @@
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "COMPONENT_KEY": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "FIRMWARE_TYPE": {
                         "bit_length": 8,
@@ -150,8 +161,10 @@
                             "enum": {
                                 "Bootloader": 1,
                                 "Bootloader_Updater": 2
-                            }
-                        }
+                            },
+                            "enum_name": "FIRMWARE_TYPE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "input_size": 3,
@@ -161,14 +174,16 @@
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "COMPONENT_KEY": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "FIRMWARE_TYPE": {
                         "bit_length": 8,
@@ -181,8 +196,10 @@
                             "enum": {
                                 "Bootloader": 1,
                                 "Bootloader_Updater": 2
-                            }
-                        }
+                            },
+                            "enum_name": "FIRMWARE_TYPE"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 3,
@@ -199,7 +216,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -209,7 +227,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -222,7 +241,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -239,7 +259,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -249,7 +270,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -262,7 +284,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -279,7 +302,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -289,7 +313,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -302,7 +327,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -319,7 +345,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -329,7 +356,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -342,7 +370,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -359,7 +388,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -369,7 +399,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -382,7 +413,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -399,7 +431,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -409,7 +442,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -422,7 +456,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -439,7 +474,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -449,7 +485,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -462,7 +499,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -479,7 +517,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -489,7 +528,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -502,7 +542,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -519,7 +560,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -529,7 +571,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -542,7 +585,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -559,7 +603,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -569,7 +614,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -582,7 +628,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -599,7 +646,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -609,7 +657,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -622,7 +671,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -639,7 +689,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -649,7 +700,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -662,7 +714,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -679,7 +732,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -689,7 +743,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -702,7 +757,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -719,7 +775,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -729,7 +786,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -742,7 +800,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -759,7 +818,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -769,7 +829,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -782,7 +843,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -799,7 +861,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -809,7 +872,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -822,7 +886,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -839,7 +904,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 64,
@@ -849,7 +915,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 64,
@@ -862,7 +929,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 64,
@@ -879,7 +947,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -889,7 +958,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 20,
@@ -902,7 +972,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -919,7 +990,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -929,7 +1001,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 14,
@@ -942,7 +1015,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -959,7 +1033,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 2,
@@ -969,7 +1044,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 2,
@@ -982,7 +1058,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 2,

@@ -22,15 +22,18 @@
                                 "ALIGNMENT_FAILED": 0,
                                 "ALIGNMENT_IN_PROGRESS": 2,
                                 "ALIGNMENT_PASSED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "RADAR_ALIGNMENT_STATUS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "HORIZONTAL_MISALIGNMENT_ANGLE_FLOAT": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "RADAR_ALIGNMENT_ERROR_LIST": {
                         "bit_length": 8,
@@ -47,15 +50,18 @@
                                 "SENSOR_OUT_OF_BOUNDS_TO_RIGHT": 1,
                                 "SENSOR_OUT_OF_BOUNDS_TO_THE_LEFT": 0,
                                 "SENSOR_OUT_OF_BOUNDS_UP": 2
-                            }
-                        }
+                            },
+                            "enum_name": "RADAR_ALIGNMENT_ERROR_TABLE"
+                        },
+                        "physical_type": "utf8"
                     },
                     "VERTICAL_MISALIGNMENT_ANGLE_FLOAT": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 6,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 10,
@@ -95,15 +101,18 @@
                                 "ALIGNMENT_FAILED": 0,
                                 "ALIGNMENT_IN_PROGRESS": 2,
                                 "ALIGNMENT_PASSED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "RADAR_ALIGNMENT_STATUS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "HORIZONTAL_MISALIGNMENT_ANGLE_FLOAT": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "RADAR_ALIGNMENT_ERROR_LIST": {
                         "bit_length": 8,
@@ -120,15 +129,18 @@
                                 "SENSOR_OUT_OF_BOUNDS_TO_RIGHT": 1,
                                 "SENSOR_OUT_OF_BOUNDS_TO_THE_LEFT": 0,
                                 "SENSOR_OUT_OF_BOUNDS_UP": 2
-                            }
-                        }
+                            },
+                            "enum_name": "RADAR_ALIGNMENT_ERROR_TABLE"
+                        },
+                        "physical_type": "utf8"
                     },
                     "VERTICAL_MISALIGNMENT_ANGLE_FLOAT": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 6,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 10,
@@ -229,8 +241,10 @@
                                 "VIN_DRIVE_TRAIN_TYPE_COUNTRY_CODE_ERROR": 14,
                                 "VIN_DRIVE_TRAIN_TYPE_ERROR": 12,
                                 "VIN_ERROR": 8
-                            }
-                        }
+                            },
+                            "enum_name": "PLANT_MODE_ROUTINE_ERROR"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PLANT_MODE_STATUS": {
                         "bit_length": 8,
@@ -244,8 +258,10 @@
                                 "ROUTINE_FAILED": 0,
                                 "ROUTINE_IN_PROGRESS": 2,
                                 "ROUTINE_PASSED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "PLANT_MODE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -284,8 +300,10 @@
                             "enum": {
                                 "TEST_FAILED": 1,
                                 "TEST_NOT_FAILED": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SELF_TEST_ROUTINE_STATUS": {
                         "bit_length": 8,
@@ -301,8 +319,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_RESULTS_STATUS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -325,8 +345,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_OUTPUT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -359,22 +381,26 @@
                                 "ALIGNMENT_FAILED": 0,
                                 "ALIGNMENT_IN_PROGRESS": 2,
                                 "ALIGNMENT_PASSED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "RADAR_ALIGNMENT_STATUS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "HORIZONTAL_MISALIGNMENT_ANGLE_FLOAT": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 3,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "PROGRESS": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "RADAR_ALIGNMENT_ERROR_LIST": {
                         "bit_length": 8,
@@ -391,15 +417,18 @@
                                 "SENSOR_OUT_OF_BOUNDS_TO_RIGHT": 1,
                                 "SENSOR_OUT_OF_BOUNDS_TO_THE_LEFT": 0,
                                 "SENSOR_OUT_OF_BOUNDS_UP": 2
-                            }
-                        }
+                            },
+                            "enum_name": "RADAR_ALIGNMENT_ERROR_TABLE"
+                        },
+                        "physical_type": "utf8"
                     },
                     "VERTICAL_MISALIGNMENT_ANGLE_FLOAT": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 7,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 11,

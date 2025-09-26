@@ -10,21 +10,24 @@
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "COMPONENT_KEY": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "FIRMWARE_TYPE": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     }
                 },
                 "input_size": 3,
@@ -34,21 +37,24 @@
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "COMPONENT_KEY": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     },
                     "FIRMWARE_TYPE": {
                         "bit_length": 8,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     }
                 },
                 "output_size": 3,
@@ -71,8 +77,10 @@
                             "enum": {
                                 "FALSE": 0,
                                 "TRUE": 1
-                            }
-                        }
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "input_size": 1,
@@ -89,7 +97,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 1,
@@ -118,8 +127,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -136,8 +147,10 @@
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4,
                                 "RUNNING_WAITING_FOR_CONTROL": 5
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -161,8 +174,10 @@
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "FAILED_UNHANDLED_CODEPATH": 4,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -184,8 +199,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_OUTPUT_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -210,8 +227,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PARK_CAN_STATUS": {
                         "bit_length": 1,
@@ -224,8 +243,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PARTY_CAN_STATUS": {
                         "bit_length": 1,
@@ -238,8 +259,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PRIMARY_RADAR_CAN_STATUS": {
                         "bit_length": 1,
@@ -252,8 +275,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SECONDARY_RADAR_CAN_STATUS": {
                         "bit_length": 1,
@@ -266,8 +291,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -284,8 +311,10 @@
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4,
                                 "RUNNING_WAITING_FOR_CONTROL": 5
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "VEHICLE_CAN_STATUS": {
                         "bit_length": 1,
@@ -298,8 +327,10 @@
                             "enum": {
                                 "FAILED": 1,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -323,8 +354,10 @@
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "FAILED_UNHANDLED_CODEPATH": 4,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -346,8 +379,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_OUTPUT_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -379,8 +414,10 @@
                                 "ANGLE_CONTROL_LKA_ACTIVE": 5,
                                 "ANGLE_CONTROL_LKA_ELK_AVAILABLE": 7,
                                 "ANGLE_CONTROL_SNA": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_EPAS_ANGLE_CONTROL_STATUS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "FAILURE_REASON": {
                         "bit_length": 8,
@@ -401,8 +438,10 @@
                                 "UI_NOT_IN_FACTORY_MODE": 3,
                                 "UNSUPPORTED_PLATFORM": 6,
                                 "VEH_POWER_STATE_INSUFFICIENT": 8
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_EPAS_CENTER_FAILURE_REASON"
+                        },
+                        "physical_type": "utf8"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -419,8 +458,10 @@
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4,
                                 "RUNNING_WAITING_FOR_CONTROL": 5
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 3,
@@ -433,7 +474,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "int",
-                        "default": null
+                        "default": null,
+                        "physical_type": "int"
                     }
                 },
                 "input_size": 2,
@@ -457,8 +499,10 @@
                                 "UI_NOT_IN_FACTORY_MODE": 3,
                                 "UNSUPPORTED_PLATFORM": 6,
                                 "VEH_POWER_STATE_INSUFFICIENT": 8
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_EPAS_CENTER_FAILURE_REASON"
+                        },
+                        "physical_type": "utf8"
                     },
                     "START_RESULT": {
                         "bit_length": 8,
@@ -474,8 +518,10 @@
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "FAILED_UNHANDLED_CODEPATH": 4,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -497,8 +543,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_OUTPUT_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,

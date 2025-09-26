@@ -25,8 +25,10 @@
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 5,
                                 "RUNNING_WAITING_FOR_CONTROL": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -50,8 +52,10 @@
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "FAILED_UNHANDLED_CODEPATH": 4,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -73,8 +77,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_OUTPUT_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,

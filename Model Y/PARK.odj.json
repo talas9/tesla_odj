@@ -21,8 +21,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PRIVATE_CAN_CONNECTION_TEST": {
                         "bit_length": 1,
@@ -35,8 +37,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -52,8 +56,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -76,8 +82,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -99,8 +107,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -125,8 +135,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_1_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -139,8 +151,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_2_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -153,8 +167,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_3_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -167,8 +183,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_4_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -181,8 +199,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_5_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -195,8 +215,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_6_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -209,8 +231,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -226,8 +250,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -250,8 +276,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -273,8 +301,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -299,8 +329,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_10_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -313,8 +345,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_11_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -327,8 +361,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_12_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -341,8 +377,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_7_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -355,8 +393,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_8_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -369,8 +409,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SENSOR_9_LIN_CONNECTION": {
                         "bit_length": 1,
@@ -383,8 +425,10 @@
                             "enum": {
                                 "FAIL": 1,
                                 "PASS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -400,8 +444,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -424,8 +470,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -447,8 +495,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,

@@ -10,7 +10,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -20,7 +21,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 20,
@@ -37,7 +39,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -47,7 +50,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 14,
@@ -64,7 +68,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "PRIORITY": {
                         "bit_length": 8,
@@ -79,8 +84,10 @@
                                 "PRIORITY_1": 1,
                                 "PRIORITY_2": 2,
                                 "PRIORITY_3": 3
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_PRIORITY"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROTOCOL_ID": {
                         "bit_length": 1,
@@ -93,15 +100,18 @@
                             "enum": {
                                 "INVALID": 0,
                                 "RQUL": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SIZE": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 10,
@@ -111,7 +121,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "PRIORITY": {
                         "bit_length": 8,
@@ -126,8 +137,10 @@
                                 "PRIORITY_1": 1,
                                 "PRIORITY_2": 2,
                                 "PRIORITY_3": 3
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_PRIORITY"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROTOCOL_ID": {
                         "bit_length": 1,
@@ -140,15 +153,18 @@
                             "enum": {
                                 "INVALID": 0,
                                 "RQUL": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SIZE": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 10,
@@ -165,7 +181,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 16,
@@ -175,7 +192,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 16,
@@ -188,7 +206,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 16,
@@ -205,7 +224,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 16,
@@ -215,7 +235,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 16,
@@ -228,7 +249,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 16,
@@ -252,8 +274,10 @@
                             "factor": 3.725290298461914e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "flux"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 4,
@@ -270,8 +294,10 @@
                             "factor": 3.725290298461914e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "flux"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "output_size": 4,
@@ -291,8 +317,10 @@
                             "factor": 3.725290298461914e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "flux"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 4,
@@ -309,7 +337,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 2,
@@ -319,7 +348,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 2,
@@ -332,7 +362,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 2,
@@ -349,7 +380,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -359,7 +391,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 20,
@@ -376,7 +409,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -386,7 +420,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 14,
@@ -403,21 +438,24 @@
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "ANGLE_OFFSET": {
                         "bit_length": 16,
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "VERSION": {
                         "bit_length": 16,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 188,
@@ -427,21 +465,24 @@
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "ANGLE_OFFSET": {
                         "bit_length": 16,
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "VERSION": {
                         "bit_length": 16,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 188,
@@ -454,21 +495,24 @@
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "ANGLE_OFFSET": {
                         "bit_length": 16,
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "VERSION": {
                         "bit_length": 16,
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 188,
@@ -485,7 +529,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "TRANSFER_STATE": {
                         "bit_length": 3,
@@ -499,8 +544,10 @@
                                 "TRANSFER_ABORTED": 2,
                                 "TRANSFER_COMPLETED": 0,
                                 "TRANSFER_SUSPENDED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_UPLOAD_TRANSFER_STATUS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "input_size": 5,
@@ -517,7 +564,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -527,7 +575,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 4,
@@ -540,7 +589,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 4,
@@ -564,8 +614,10 @@
                             "factor": 10.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "rev"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 4,
@@ -582,8 +634,10 @@
                             "factor": 10.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "rev"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "output_size": 4,
@@ -603,8 +657,10 @@
                             "factor": 10.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "rev"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 4,
@@ -628,8 +684,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "event"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 2,
@@ -646,8 +704,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "event"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "output_size": 2,
@@ -667,8 +727,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "event"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 2,
@@ -692,8 +754,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "km"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 4,
@@ -710,8 +774,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "km"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "output_size": 4,
@@ -731,12 +797,14 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "km"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 4,
-                "security_level": 5
+                "security_level": 0
             }
         }
     },
@@ -756,8 +824,10 @@
                         "factor": 0.15,
                         "maximum": null,
                         "minimum": null,
-                        "offset": 0.0
-                    }
+                        "offset": 0.0,
+                        "unit": "LPM"
+                    },
+                    "physical_type": "float"
                 }
             },
             "input_size": 1,
@@ -775,8 +845,10 @@
                         "factor": 0.15,
                         "maximum": null,
                         "minimum": null,
-                        "offset": 0.0
-                    }
+                        "offset": 0.0,
+                        "unit": "LPM"
+                    },
+                    "physical_type": "float"
                 }
             },
             "output_size": 1,
@@ -797,49 +869,56 @@
                         "bit_position": 0,
                         "byte_position": 3,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "ACCEL_TRACK_1_DISCONNECTED": {
                         "bit_length": 1,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "ACCEL_TRACK_1_OUT_OF_RANGE": {
                         "bit_length": 1,
                         "bit_position": 1,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "ACCEL_TRACK_1_VOLTAGE_TOO_LOW": {
                         "bit_length": 1,
                         "bit_position": 2,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "ACCEL_TRACK_2_DISCONNECTED": {
                         "bit_length": 1,
                         "bit_position": 0,
                         "byte_position": 2,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "ACCEL_TRACK_2_OUT_OF_RANGE": {
                         "bit_length": 1,
                         "bit_position": 1,
                         "byte_position": 2,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "ACCEL_TRACK_2_VOLTAGE_TOO_LOW": {
                         "bit_length": 1,
                         "bit_position": 2,
                         "byte_position": 2,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -855,8 +934,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 4,
@@ -879,8 +960,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -902,8 +985,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -929,8 +1014,10 @@
                             "factor": 0.01,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "mm"
+                        },
+                        "physical_type": "float"
                     },
                     "BRAKE_LINE_NO_SWITCHING_POINT_IBST_DRIVER_ROD_MOVEMENT": {
                         "bit_length": 16,
@@ -944,22 +1031,26 @@
                             "factor": 0.01,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "mm"
+                        },
+                        "physical_type": "float"
                     },
                     "DI_NC_SWITCH_TEST_PASSED": {
                         "bit_length": 1,
                         "bit_position": 2,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "DI_NO_SWITCH_TEST_PASSED": {
                         "bit_length": 1,
                         "bit_position": 1,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -975,22 +1066,26 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SWITCH_INSTALLED_AT_CORRECT_DEPTH": {
                         "bit_length": 1,
                         "bit_position": 3,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "VCLEFT_NO_SWITCH_TEST_PASSED": {
                         "bit_length": 1,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 6,
@@ -1013,8 +1108,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1036,8 +1133,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1056,7 +1155,8 @@
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -1072,8 +1172,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -1096,8 +1198,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1119,8 +1223,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1139,7 +1245,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 8,
@@ -1152,14 +1259,16 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "SALT": {
                         "bit_length": 56,
                         "bit_position": 0,
                         "byte_position": 16,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 23,
@@ -1187,42 +1296,48 @@
                         "bit_position": 4,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "MOTOR_CONNECTION_ENCODER_B_FAULT": {
                         "bit_length": 1,
                         "bit_position": 5,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "MOTOR_CONNECTION_ENCODER_POWER_FAULT": {
                         "bit_length": 1,
                         "bit_position": 6,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "MOTOR_CONNECTION_RESOLVER_DISCONNECTED": {
                         "bit_length": 1,
                         "bit_position": 7,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "MOTOR_CONNECTION_STATOR_TEMPERATURE_SENSOR_NOT_CONNECTED": {
                         "bit_length": 1,
                         "bit_position": 1,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "MOTOR_CONNECTION_STATOR_TEMPERATURE_SENSOR_SHORTED": {
                         "bit_length": 1,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -1238,8 +1353,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -1262,8 +1379,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1285,8 +1404,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1305,7 +1426,8 @@
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -1321,8 +1443,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -1345,8 +1469,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1368,8 +1494,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1388,7 +1516,8 @@
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -1404,8 +1533,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -1428,8 +1559,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1451,8 +1584,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1478,15 +1613,18 @@
                             "factor": 0.001953125,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "dB"
+                        },
+                        "physical_type": "float"
                     },
                     "ERROR_TABLE": {
                         "bit_length": 1472,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     },
                     "LEARN_RESULT": {
                         "bit_length": 5,
@@ -1521,8 +1659,10 @@
                                 "FAIL_VERIFICATION_VARIANCE": 16,
                                 "FAIL_VERIFICATION_VOLTAGE": 12,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SPINDOWN_LEARN_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "ROUTINE_STATUS": {
                         "bit_length": 8,
@@ -1538,16 +1678,35 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 188,
                 "security_level": 0
             },
             "start": {
-                "input": {},
-                "input_size": 0,
+                "input": {
+                    "LEARN_ON_GROUND": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
                 "output": {
                     "START_RESULTS_REASON": {
                         "bit_length": 4,
@@ -1559,14 +1718,17 @@
                             "calculator": "enum",
                             "enum": {
                                 "ALREADY_RUNNING": 1,
+                                "GROUNDED_SPINDOWN_NOT_SUPPORTED": 7,
                                 "INVALID_PARAMETERS": 2,
                                 "NOT_IN_CORRECT_GEAR": 6,
                                 "NOT_IN_SERVICE_MODE": 5,
                                 "NO_FLUX_CALIBRATION": 4,
                                 "NO_OFFSET_CALIBRATION": 3,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SPINDOWN_LEARN_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "START_ROUTINE_RESULTS": {
                         "bit_length": 8,
@@ -1581,8 +1743,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -1604,8 +1768,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -1631,8 +1797,10 @@
                             "factor": 3.725290298461914e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "Wb"
+                        },
+                        "physical_type": "float"
                     },
                     "FINAL_OFFSET": {
                         "bit_length": 32,
@@ -1646,8 +1814,10 @@
                             "factor": 3.7252903e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "Rev"
+                        },
+                        "physical_type": "float"
                     },
                     "FINAL_VD": {
                         "bit_length": 32,
@@ -1661,8 +1831,10 @@
                             "factor": 3.7252903e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "M"
+                        },
+                        "physical_type": "float"
                     },
                     "FINAL_VQ": {
                         "bit_length": 32,
@@ -1676,8 +1848,10 @@
                             "factor": 3.7252903e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "M"
+                        },
+                        "physical_type": "float"
                     },
                     "INITIAL_FLUX": {
                         "bit_length": 32,
@@ -1691,8 +1865,10 @@
                             "factor": 3.725290298461914e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "Wb"
+                        },
+                        "physical_type": "float"
                     },
                     "INITIAL_OFFSET": {
                         "bit_length": 32,
@@ -1706,8 +1882,10 @@
                             "factor": 3.7252903e-09,
                             "maximum": null,
                             "minimum": null,
-                            "offset": 0.0
-                        }
+                            "offset": 0.0,
+                            "unit": "Rev"
+                        },
+                        "physical_type": "float"
                     },
                     "INITIAL_ROTOR_TEMPERATURE": {
                         "bit_length": 8,
@@ -1721,8 +1899,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": -40.0
-                        }
+                            "offset": -40.0,
+                            "unit": "DegC"
+                        },
+                        "physical_type": "float"
                     },
                     "LEARN_RESULT": {
                         "bit_length": 5,
@@ -1757,8 +1937,10 @@
                                 "FAIL_VERIFICATION_VARIANCE": 16,
                                 "FAIL_VERIFICATION_VOLTAGE": 12,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SPINDOWN_LEARN_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "LEARN_SELECT": {
                         "bit_length": 2,
@@ -1773,8 +1955,10 @@
                                 "NONE": 0,
                                 "ROTOR_FLUX": 2,
                                 "ROTOR_OFFSET": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ROTOR_LEARN_SELECT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "ROUTINE_STATUS": {
                         "bit_length": 8,
@@ -1790,8 +1974,10 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 27,
@@ -1812,8 +1998,10 @@
                                 "NONE": 0,
                                 "ROTOR_FLUX": 2,
                                 "ROTOR_OFFSET": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ROTOR_LEARN_SELECT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "ROTOR_TEMPERATURE": {
                         "bit_length": 8,
@@ -1827,8 +2015,10 @@
                             "factor": 1.0,
                             "maximum": null,
                             "minimum": null,
-                            "offset": -40.0
-                        }
+                            "offset": -40.0,
+                            "unit": "DegC"
+                        },
+                        "physical_type": "float"
                     }
                 },
                 "input_size": 2,
@@ -1843,14 +2033,17 @@
                             "calculator": "enum",
                             "enum": {
                                 "ALREADY_RUNNING": 1,
+                                "GROUNDED_SPINDOWN_NOT_SUPPORTED": 7,
                                 "INVALID_PARAMETERS": 2,
                                 "NOT_IN_CORRECT_GEAR": 6,
                                 "NOT_IN_SERVICE_MODE": 5,
                                 "NO_FLUX_CALIBRATION": 4,
                                 "NO_OFFSET_CALIBRATION": 3,
                                 "SUCCESS": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SPINDOWN_LEARN_START_RESULT"
+                        },
+                        "physical_type": "utf8"
                     },
                     "START_ROUTINE_RESULTS": {
                         "bit_length": 8,
@@ -1865,8 +2058,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 2,
@@ -1888,11 +2083,154 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SECURE_GET_CHALLENGE": {
+            "hex_id": "0x413",
+            "node_name": "DI",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "CHALLENGE": {
+                        "bit_length": 128,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE_CHALLENGE": 4,
+                                "FAILURE_EEPROM": 5,
+                                "FAILURE_EEPROM_PENDING": 6,
+                                "FAILURE_NOT_STARTED": 2,
+                                "FAILURE_RUNNING": 1,
+                                "FAILURE_SIGNATURE": 3,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "SECURE_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 17,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE_CHALLENGE": 4,
+                                "FAILURE_EEPROM": 5,
+                                "FAILURE_EEPROM_PENDING": 6,
+                                "FAILURE_NOT_STARTED": 2,
+                                "FAILURE_RUNNING": 1,
+                                "FAILURE_SIGNATURE": 3,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "SECURE_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "SECURE_SET_DATA": {
+            "hex_id": "0x410",
+            "node_name": "DI",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILURE_CHALLENGE": 4,
+                                "FAILURE_EEPROM": 5,
+                                "FAILURE_EEPROM_PENDING": 6,
+                                "FAILURE_NOT_STARTED": 2,
+                                "FAILURE_RUNNING": 1,
+                                "FAILURE_SIGNATURE": 3,
+                                "SUCCESS": 0
+                            },
+                            "enum_name": "SECURE_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "BLOB": {
+                        "bit_length": 40,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "SIGNATURE": {
+                        "bit_length": 512,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 69,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
                 "security_level": 0
             }
         }

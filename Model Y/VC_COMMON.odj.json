@@ -10,7 +10,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -20,7 +21,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 20,
@@ -37,7 +39,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -47,7 +50,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 14,
@@ -64,7 +68,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 20,
@@ -74,7 +79,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 20,
@@ -91,7 +97,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "input_size": 14,
@@ -101,7 +108,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "bytes",
-                        "default": null
+                        "default": null,
+                        "physical_type": "bytes"
                     }
                 },
                 "output_size": 14,

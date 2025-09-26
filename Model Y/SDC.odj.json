@@ -10,7 +10,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "PRIORITY": {
                         "bit_length": 8,
@@ -25,8 +26,10 @@
                                 "PRIORITY_1": 1,
                                 "PRIORITY_2": 2,
                                 "PRIORITY_3": 3
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_PRIORITY"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROTOCOL_ID": {
                         "bit_length": 8,
@@ -39,15 +42,18 @@
                             "enum": {
                                 "INVALID": 0,
                                 "RQUL": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SIZE": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 10,
@@ -57,7 +63,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "PRIORITY": {
                         "bit_length": 8,
@@ -72,8 +79,10 @@
                                 "PRIORITY_1": 1,
                                 "PRIORITY_2": 2,
                                 "PRIORITY_3": 3
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_PRIORITY"
+                        },
+                        "physical_type": "utf8"
                     },
                     "PROTOCOL_ID": {
                         "bit_length": 8,
@@ -86,15 +95,18 @@
                             "enum": {
                                 "INVALID": 0,
                                 "RQUL": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_UPLOAD_PROTOCOL"
+                        },
+                        "physical_type": "utf8"
                     },
                     "SIZE": {
                         "bit_length": 32,
                         "bit_position": 0,
                         "byte_position": 4,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 10,
@@ -111,7 +123,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "TRANSFER_STATE": {
                         "bit_length": 8,
@@ -125,8 +138,10 @@
                                 "TRANSFER_ABORTED": 2,
                                 "TRANSFER_COMPLETED": 0,
                                 "TRANSFER_SUSPENDED": 1
-                            }
-                        }
+                            },
+                            "enum_name": "ECULOG_UPLOAD_TRANSFER_STATUS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "input_size": 5,

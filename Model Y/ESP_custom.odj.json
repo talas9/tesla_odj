@@ -912,6 +912,173 @@
                 "security_level": 0
             }
         },
+        "PUMP_MOTOR_SLOWDOWN": {
+            "hex_id": "0xF004",
+            "node_name": "ESP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "EXTENDED_STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "DEGRADATION_LOST": 10,
+                                "HARDWARE_PUMP_MOTOR_ERROR": 11,
+                                "HARDWARE_VALVE_ERROR": 12,
+                                "HYDRAULIC_PROTECTION_ERROR": 13,
+                                "MAXIMUM_TIME_EXCEEDED_ERROR": 8,
+                                "NO_ERROR": 0
+                            }
+                        }
+                    },
+                    "PHASE_1_SLOWDOWN_TIME": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.005,
+                            "maximum": 1.275,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "PHASE_2_SLOWDOWN_TIME": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.005,
+                            "maximum": 1.275,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "PHASE_3_SLOWDOWN_TIME": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.005,
+                            "maximum": 1.275,
+                            "minimum": 0,
+                            "offset": 0.0
+                        }
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FINISHED": 2,
+                                "RUNNING": 1,
+                                "STOPPED_ABNORMALLY": 4,
+                                "STOPPED_BY_USER": 3
+                            }
+                        }
+                    }
+                },
+                "output_size": 5,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "REPAIR_BLEED": {
+            "hex_id": "0xF001",
+            "node_name": "ESP",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "CANCELLED_BY_ECU": 3,
+                                "FINISHED": 1,
+                                "INCORRECT_IDENTIFIER": 4,
+                                "NOT_STARTED": 6,
+                                "RUNNING": 2,
+                                "STOPPED_BY_USER": 5
+                            }
+                        }
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {
+                    "REPAIR_BLEEDING_PHASE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "PHASE_1": 1,
+                                "PHASE_2": 2,
+                                "PHASE_3": 3,
+                                "PHASE_4": 4
+                            }
+                        }
+                    },
+                    "REPETITION_COUNTER": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "3_REPETITIONS": 3,
+                                "4_REPETITIONS": 4,
+                                "5_REPETITIONS": 5
+                            }
+                        }
+                    }
+                },
+                "input_size": 2,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
         "SAS_RESET_OFFSET": {
             "hex_id": "0xF103",
             "node_name": "ESP",

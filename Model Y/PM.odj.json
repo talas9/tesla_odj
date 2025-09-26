@@ -10,7 +10,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 2,
@@ -20,7 +21,8 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 2,
@@ -33,10 +35,99 @@
                         "bit_position": 0,
                         "byte_position": 0,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "OIL_PUMP_SUB_USAGE_ID_REMOTE": {
+            "hex_id": "0xf1b",
+            "node_name": "PM",
+            "read": {
+                "input": {
+                    "OIL_PUMP_SUB_USAGE_ID_REMOTE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "output": {
+                    "OIL_PUMP_SUB_USAGE_ID_REMOTE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "write": {
+                "input": {
+                    "OIL_PUMP_SUB_USAGE_ID_REMOTE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 2,
+                "security_level": 0
+            }
+        },
+        "SDC_EXPECTED": {
+            "hex_id": "0xf1d",
+            "node_name": "PM",
+            "read": {
+                "input": {
+                    "SDC_EXPECTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "SDC_EXPECTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
                 "security_level": 0
             }
         }
@@ -56,7 +147,8 @@
                         "bit_position": 1,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     },
                     "STATUS": {
                         "bit_length": 8,
@@ -72,15 +164,18 @@
                                 "NOT_RUNNING_NEVER_STARTED": 3,
                                 "NOT_RUNNING_STOP_REQUESTED": 1,
                                 "RUNNING": 4
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_RESPONSE_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     },
                     "VEHICLE_BUS_CONNECTED": {
                         "bit_length": 1,
                         "bit_position": 0,
                         "byte_position": 1,
                         "data_type": "uint",
-                        "default": null
+                        "default": null,
+                        "physical_type": "uint"
                     }
                 },
                 "output_size": 2,
@@ -103,8 +198,10 @@
                                 "FAILED_INCORRECT_CONDITIONS": 3,
                                 "FAILED_OTHER_ROUTINE_RUNNING": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_START_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
@@ -126,8 +223,10 @@
                                 "FAILED_ROUTINE_NOT_RUNNING": 1,
                                 "FAILED_STOP_NOT_ALLOWED": 2,
                                 "SUCCESSFUL": 0
-                            }
-                        }
+                            },
+                            "enum_name": "SELF_TEST_STOP_ROUTINE_RESULTS"
+                        },
+                        "physical_type": "utf8"
                     }
                 },
                 "output_size": 1,
