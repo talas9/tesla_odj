@@ -1,0 +1,868 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "VCFRONT1",
+    "routines": {
+        "CLEAR_POWER_RATIONALITY": {
+            "hex_id": "0x580",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "FAULT_INJECT_OV_BRIDGE": {
+            "hex_id": "0x513",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "FAULT_INJECT_PCS_OFF": {
+            "hex_id": "0x514",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "FAULT_INJECT_RIGHT_DOMAIN": {
+            "hex_id": "0x511",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "FAULT_INJECT_UV_LOADSHED": {
+            "hex_id": "0x512",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_HVIL_CONDITIONS": {
+            "hex_id": "0x542",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "BRIDGE_EFUSE_VOLTAGE": {
+                        "bit_length": 2,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NORMAL": 0,
+                                "OVERVOLTAGE": 2,
+                                "UNDERVOLTAGE": 1
+                            },
+                            "enum_name": "VOLTAGE_QUALIFICATION"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "DRIVE_INVERTER_FRONT_POWER": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PCS_EFUSE_VOLTAGE": {
+                        "bit_length": 2,
+                        "bit_position": 4,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NORMAL": 0,
+                                "OVERVOLTAGE": 2,
+                                "UNDERVOLTAGE": 1
+                            },
+                            "enum_name": "VOLTAGE_QUALIFICATION"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PCS_ENABLE_VOLTAGE": {
+                        "bit_length": 2,
+                        "bit_position": 6,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NORMAL": 0,
+                                "OVERVOLTAGE": 2,
+                                "UNDERVOLTAGE": 1
+                            },
+                            "enum_name": "VOLTAGE_QUALIFICATION"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VBAT_PROT_VOLTAGE": {
+                        "bit_length": 2,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NORMAL": 0,
+                                "OVERVOLTAGE": 2,
+                                "UNDERVOLTAGE": 1
+                            },
+                            "enum_name": "VOLTAGE_QUALIFICATION"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VCRIGHT_EFUSE_VOLTAGE": {
+                        "bit_length": 2,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NORMAL": 0,
+                                "OVERVOLTAGE": 2,
+                                "UNDERVOLTAGE": 1
+                            },
+                            "enum_name": "VOLTAGE_QUALIFICATION"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VEHICLE_POWER_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 3,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 0
+            }
+        },
+        "SELF_TEST_LOCKOUT_CIRCUIT": {
+            "hex_id": "0x529",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "U13_LOCKOUT_CIRCUIT_TEST": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "VOLTAGE_MISSING": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VOLTAGE_UNEXPECTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED": 1,
+                                "NOT_FAILED": 0
+                            },
+                            "enum_name": "SELF_TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        },
+        "SELF_TEST_PCS_ENABLE": {
+            "hex_id": "0x510",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "PCS_EFUSE_FAULT": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "PCS_EFUSE_ON": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SENSE_VOLTAGE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "ROUTINE_STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 2,
+                "security_level": 0
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "ROUTINE_STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "WIPE_ALL_NVM": {
+            "hex_id": "0x544",
+            "node_name": "VCFRONT1",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STATUS": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "NOT_RUNNING_FINISHED": 0,
+                                "NOT_RUNNING_INTERRUPTED": 2,
+                                "NOT_RUNNING_NEVER_STARTED": 3,
+                                "NOT_RUNNING_STOP_REQUESTED": 1,
+                                "RUNNING": 4
+                            },
+                            "enum_name": "STATUS"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "start": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "START_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ALREADY_RUNNING": 1,
+                                "FAILED_INCORRECT_CONDITIONS": 3,
+                                "FAILED_OTHER_ROUTINE_RUNNING": 2,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "START_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "STOP_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FAILED_ROUTINE_NOT_RUNNING": 1,
+                                "SUCCESSFUL": 0
+                            },
+                            "enum_name": "STOP_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 5
+            }
+        }
+    }
+}

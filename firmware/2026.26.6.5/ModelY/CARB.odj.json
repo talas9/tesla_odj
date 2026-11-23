@@ -1,0 +1,3113 @@
+{
+    "data": {
+        "BATTERY_CAPACITY_AND_HEALTH_METRICS": {
+            "hex_id": "0xf4d0",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "DISTANCE_SINCE_LAST_SOH_UPDATE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "DISTANCE_SINCE_LAST_SOH_UPDATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INITIAL_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "INITIAL_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "REMAINING_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "REMAINING_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SAE_RESERVED": {
+                        "bit_length": 5,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 7,
+                "output": {
+                    "DISTANCE_SINCE_LAST_SOH_UPDATE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "DISTANCE_SINCE_LAST_SOH_UPDATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "INITIAL_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "INITIAL_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "REMAINING_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "REMAINING_ENERGY_STORAGE_SYSTEM_RESERVE_ENERGY_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "SAE_RESERVED": {
+                        "bit_length": 5,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 7,
+                "security_level": 0
+            }
+        },
+        "BATTERY_MIN_MAX_CELL_VOLTAGE": {
+            "hex_id": "0xf4b9",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "BATTERY_MAX_CELL_VOLTAGE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_MIN_CELL_VOLTAGE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "BATTERY_MAX_CELL_VOLTAGE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_MIN_CELL_VOLTAGE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.001,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
+        "BATTERY_TEMPERATURE_DATA": {
+            "hex_id": "0xf4b7",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "BATTERY_AVG_CELL_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_AVG_CELL_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_BUS_BAR_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_BUS_BAR_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_COOLANT_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_COOLANT_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_COOLING_STATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_ESS_THERMAL_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "BATTERY_MAX_CELL_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_MAX_CELL_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_MIN_CELL_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_MIN_CELL_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RESERVED": {
+                        "bit_length": 2,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 7,
+                "output": {
+                    "BATTERY_AVG_CELL_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_AVG_CELL_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_BUS_BAR_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_BUS_BAR_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_COOLANT_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_COOLANT_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_COOLING_STATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_ESS_THERMAL_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 6,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "BATTERY_MAX_CELL_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_MAX_CELL_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "BATTERY_MIN_CELL_TEMP": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": -40.0,
+                            "unit": "degC"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_MIN_CELL_TEMP_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "RESERVED": {
+                        "bit_length": 2,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 7,
+                "security_level": 0
+            }
+        },
+        "CHARGE_RATE": {
+            "hex_id": "0xf4d1",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "CHARGE_RATE_ACTUAL": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.05,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "KW"
+                        },
+                        "physical_type": "float"
+                    },
+                    "CHARGE_RATE_LIMIT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.05,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "KW"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CHARGE_RATE_ACTUAL": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.05,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "KW"
+                        },
+                        "physical_type": "float"
+                    },
+                    "CHARGE_RATE_LIMIT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.05,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "KW"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
+        "HVESS_CUMULATIVE_ENERGY": {
+            "hex_id": "0xf4bc",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "HVESPA_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPA_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPB_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPB_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPC_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPC_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPD_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPD_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPE_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 21,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPF_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 25,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPF_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPG_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 29,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPG_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPH_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 33,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPH_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESS_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 37,
+                "output": {
+                    "HVESPA_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPA_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPB_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPB_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPC_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPC_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPD_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPD_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPE_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 21,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPF_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 25,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPF_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPG_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 29,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPG_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPH_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 33,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPH_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESS_CUMULATIVE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1.0,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 37,
+                "security_level": 0
+            }
+        },
+        "HVESS_RECOMMENDED_MAX_SOC": {
+            "hex_id": "0xf4c1",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "HVESPA_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPA_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPB_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPB_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPC_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPC_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPD_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPD_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPE_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 11,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPF_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPF_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPG_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 15,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPG_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPH_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPH_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESS_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 19,
+                "output": {
+                    "HVESPA_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPA_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPB_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPB_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPC_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPC_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPD_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPD_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPE_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 11,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPF_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPF_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPG_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 15,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPG_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPH_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPH_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESS_RECOMMENDED_MAX_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 19,
+                "security_level": 0
+            }
+        },
+        "HVESS_RECOMMENDED_MIN_SOC": {
+            "hex_id": "0xf4bf",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "HVESPA_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPA_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPB_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPB_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPC_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPC_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPD_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPD_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPE_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 11,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPF_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPF_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPG_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 15,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPG_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPH_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPH_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESS_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 19,
+                "output": {
+                    "HVESPA_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPA_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPB_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 5,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPB_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPC_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 7,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPC_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPD_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 9,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPD_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPE_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 11,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 4,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPF_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 13,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPF_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 5,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPG_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 15,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPG_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 6,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESPH_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 17,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    },
+                    "HVESPH_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 7,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "FALSE": 0,
+                                "TRUE": 1
+                            },
+                            "enum_name": "BOOL"
+                        },
+                        "physical_type": "utf8"
+                    },
+                    "HVESS_RECOMMENDED_MIN_SOC": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.0015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 19,
+                "security_level": 0
+            }
+        },
+        "PACK_CURRENT_ONE_SEC": {
+            "hex_id": "0xf4da",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "CUMULATIVE_CURRENT_LAST_SECOND": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1e-06,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "Ah_s"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CUMULATIVE_CURRENT_LAST_SECOND": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1e-06,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "Ah_s"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
+        "PACK_ENERGY_ONE_SEC": {
+            "hex_id": "0xf4d4",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "CUMULATIVE_ENERGY_LAST_SECOND": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1e-06,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "Wh_s"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "CUMULATIVE_ENERGY_LAST_SECOND": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 1e-06,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "Wh_s"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
+        "SOH_CALCULATION_RDY": {
+            "hex_id": "0xf4d8",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "READY": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "READY": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "STATE_OF_CHARGE": {
+            "hex_id": "0xf45b",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "STATE_OF_CHARGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.392,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "STATE_OF_CHARGE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.392,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "STATE_OF_HEALTH": {
+            "hex_id": "0xf4b2",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "STATE_OF_HEALTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.392,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 1,
+                "output": {
+                    "STATE_OF_HEALTH": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.392,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "PCT"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 0
+            }
+        },
+        "TOTAL_CHARGE_ENERGY": {
+            "hex_id": "0x316",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "TOTAL_CHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 4,
+                "output": {
+                    "TOTAL_CHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 0
+            }
+        },
+        "TOTAL_DISCHARGE_ENERGY": {
+            "hex_id": "0xf8b3",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "LIFETIME_TOTAL_DISCHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "RECENT_TOTAL_DISCHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 8,
+                "output": {
+                    "LIFETIME_TOTAL_DISCHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "RECENT_TOTAL_DISCHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 8,
+                "security_level": 0
+            }
+        },
+        "TOTAL_OFFBOARD_CHARGE_ENERGY": {
+            "hex_id": "0xf888",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "LIFETIME_TOTAL_OFFBOARD_CHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "RECENT_TOTAL_OFFBOARD_CHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "input_size": 8,
+                "output": {
+                    "LIFETIME_TOTAL_OFFBOARD_CHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    },
+                    "RECENT_TOTAL_OFFBOARD_CHARGE_ENERGY": {
+                        "bit_length": 32,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "kWh"
+                        },
+                        "physical_type": "float"
+                    }
+                },
+                "output_size": 8,
+                "security_level": 0
+            }
+        },
+        "VEHICLE_SYSTEM_DATA": {
+            "hex_id": "0xf49a",
+            "node_name": "CARB",
+            "read": {
+                "input": {
+                    "BATTERY_CURRENT_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "BATTERY_SYSTEM_CURRENT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "A"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_SYSTEM_VOLTAGE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_VOLTAGE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "ENHANCED_VEHICLE_CHARGING_STATE": {
+                        "bit_length": 2,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "ENHANCED_VEHICLE_CHARGING_STATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VEHICLE_CHARGING_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VEHICLE_CHARGING_STATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 6,
+                "output": {
+                    "BATTERY_CURRENT_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 2,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "BATTERY_SYSTEM_CURRENT": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 4,
+                        "data_type": "int",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.1,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "A"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_SYSTEM_VOLTAGE": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "linear",
+                            "denominator": 1.0,
+                            "factor": 0.015625,
+                            "maximum": null,
+                            "minimum": null,
+                            "offset": 0.0,
+                            "unit": "V"
+                        },
+                        "physical_type": "float"
+                    },
+                    "BATTERY_VOLTAGE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 1,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "ENHANCED_VEHICLE_CHARGING_STATE": {
+                        "bit_length": 2,
+                        "bit_position": 1,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "ENHANCED_VEHICLE_CHARGING_STATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 3,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VEHICLE_CHARGING_STATE": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "VEHICLE_CHARGING_STATE_SUPPORTED": {
+                        "bit_length": 1,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 6,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "CARB",
+    "routines": {}
+}

@@ -1,0 +1,41 @@
+{
+    "data": {
+        "DTC_TEST_RESULT": {
+            "hex_id": "0x4ff",
+            "node_name": "DEM",
+            "write": {
+                "input": {
+                    "TEST_ID": {
+                        "bit_length": 16,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    },
+                    "TEST_RESULT": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "map": {
+                            "calculator": "enum",
+                            "enum": {
+                                "TEST_FAILED": 2,
+                                "TEST_PASSED": 1
+                            },
+                            "enum_name": "TEST_RESULT"
+                        },
+                        "physical_type": "utf8"
+                    }
+                },
+                "input_size": 3,
+                "security_level": 0
+            }
+        }
+    },
+    "io_controls": {},
+    "node_name": "DEM",
+    "routines": {}
+}

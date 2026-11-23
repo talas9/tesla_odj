@@ -1,0 +1,141 @@
+{
+    "data": {},
+    "io_controls": {},
+    "node_name": "ICR",
+    "routines": {
+        "SET_OCCUPANCY": {
+            "hex_id": "0x450",
+            "node_name": "ICR",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "1LCLASSIFICATION_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "1RCLASSIFICATION_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "OCCUPIED_SEAT_MASK": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "UNOCCUPIED_SEAT_MASK": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "output_size": 4,
+                "security_level": 5
+            },
+            "start": {
+                "input": {
+                    "1LCLASSIFICATION_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 3,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "1RCLASSIFICATION_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 2,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "OCCUPIED_SEAT_MASK": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    },
+                    "UNOCCUPIED_SEAT_MASK": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 1,
+                        "data_type": "uint",
+                        "default": null,
+                        "physical_type": "uint"
+                    }
+                },
+                "input_size": 4,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 5
+            }
+        },
+        "SET_USER_PRESENCE": {
+            "hex_id": "0x461",
+            "node_name": "ICR",
+            "results": {
+                "input": {},
+                "input_size": 0,
+                "output": {
+                    "USER_PRESENCE_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "output_size": 1,
+                "security_level": 11
+            },
+            "start": {
+                "input": {
+                    "USER_PRESENCE_STATE": {
+                        "bit_length": 8,
+                        "bit_position": 0,
+                        "byte_position": 0,
+                        "data_type": "bytes",
+                        "default": null,
+                        "physical_type": "bytes"
+                    }
+                },
+                "input_size": 1,
+                "output": {},
+                "output_size": 0,
+                "security_level": 11
+            },
+            "stop": {
+                "input": {},
+                "input_size": 0,
+                "output": {},
+                "output_size": 0,
+                "security_level": 11
+            }
+        }
+    }
+}
